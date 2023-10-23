@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@Zyrex ~ Fedded Biolink</title>
+  <script type="text/javascript" src="mtrail.js"></script>
+  <link rel="stylesheet" href="./stylesheet.css">
+<div id="clickanywhere">
+    <h1>click to enter</h1>
+     <script>
+        document.addEventListener("click", function () {
+            var clickAnywhereElement = document.getElementById("clickanywhere");
+            clickAnywhereElement.style.opacity = "0";
+            setTimeout(function () {
+                clickAnywhereElement.style.display = "none";
+            }, 500);
+            document.getElementById("song").play();
+        });
+    </script>
+</div>
+</head>
+<body>
+  <div class="framework">
+    <div class="card" data-tilt>
+      <div class="profile-pic"></div>
+      <audio id="song">
+        <source src="images/a1.mp3">
+      </audio>
+       <script>
+        window.addEventListener('click', () => {
+            document.getElementById("song").play();
+        });
+       </script>
+      <h1 class="full-name">@Zyrex</h1>
+      <h2 class="profession">🤍</h2>
+      <div class="social-media-icons">
+        <a href="https://discord.gg/rockstarss"><img src="./images/discord.png" alt=""></a>
+    </div>
+  </div>
+  <script src="./vanilla-tilt.min.js"></script>
+    <script>
+        var sf = new Snowflakes({
+            color: "red"
+        });
+    </script>
+</body>
+</html>
